@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kriptografi</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Vigenere Cipher</a>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li id="li-enkrip" class="nav-item active">
+          <a id="link-enkrip" class="nav-link" href="#">Enkrip <span class="sr-only">(current)</span></a>
+        </li>
+        <li id="li-dekrip" class="nav-item">
+          <a id="link-dekrip" class="nav-link" href="#">Dekrip</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container my-5">
+    <!-- Form ENKRISI -->
+    <div id="form-enkrip">
+      <div class="form-group">
+        <label for="plaintext">Plaintext</label>
+        <textarea class="form-control" name="plaintext" id="plaintext"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="key">Key</label>
+        <textarea class="form-control" name="key" id="key"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="ciphertext">Ciphertext</label>
+        <textarea class="form-control" name="ciphertext" id="ciphertext" disabled></textarea>
+      </div>
+      <div class="form-group">
+        <button id="btn-enkrip" class="btn btn-primary btn-block">enkripsi</button>
+        <button id="btn-dekrip" class="btn btn-primary btn-block d-none">dekripsi</button>
+      </div>
+    </div><!-- END Form ENKRISI -->
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
